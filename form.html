@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+li{
+    margin-bottom: 20px; text-align: center;
+}
+body{
+     background-color: rgb(182, 200, 249); text-align: center; 
+}
+label{
+    font-weight: 1000; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center; margin: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: blue;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form action="/my-handling-form-page" method="post">
+        
+           <fieldset>
+            
+          
+            <label for="name">Nombre:</label>
+            <input type="text" minlength="3" maxlength="10" id="name" name="user_name" />
+                  <br>
+                  <br>
+            <label for="Contrasena">Contraseña</label>
+            <input type="password" required id="Contrasena" name="user_Contrasena">
+                 <br>
+                 <br>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+                 <br>
+                  <br>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+                  <br>
+                  <br>
+            <label for="date">Fecha de Nacimiento:</label>
+            <input type="date" id="date" name="user_date"/>
+                  <br>
+                    <br>
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="user_tel"/>
+                 <br>
+                 <br>
+    </fieldset> 
+       
+       
+            <label for="conform">Grado de conformidad</label>
+            <input type="range" id="conform" name="user_conform"/>
+                 <br>
+                 <br>
+            <label for="curriculum">Pon aquí tu curriculum</label>
+            <input type="file" id="curriculum" name="user_curriculum"/>
+                 <br>
+                 <br>
+            <label for="favcolor">Color favorito</label>
+            <input type="color" id="favcolor" name="user_favcolor"/>
+                 <br>
+                 <br>
+            <label for="age">Edad</label>
+            <input type="number" min="18" max="65" id="age" name="user_age"/>
+                 <br>
+                 <br>
+            <label for="dateform">Fecha de envío de formulario</label>
+            <input type="datetime-local" id="dateform" name="user_dateform">
+                 <br>
+                 <br>
+            <label for="photo">Foto de perfil</label>
+            <input type="image" id="photo" name="user_photo">
+                 <br>
+                 <br>
+            <label for="profe">Profesor que peor te cae</label>
+            <input type="hidden" id="profe" name="user_profe">
+                 <br>
+                 <br> 
+            <label for="viajes">Busca tu sitio favorito para viajar</label>
+            <input type="search" id="viajes" name="user_viajes">
+                 <br>
+                 <br>
+            <label for="mespref">Mes preferido para viajar</label>
+            <input type="month" id="mespref" name="user_mespref">
+                 <br>
+                 <br>
+            <label for="semanapref">Elige en una semana en mayo o julio</label>
+            <input type="week" min="2024-W18" max="2024-25" id="semanapref" name="user_semanapref">
+                 <br>
+                 <br>
+            <label for="hora">Hora de entrada</label>
+            <input type="time" id="hora" name="user_hora">
+                 <br>
+                 <br>
+            <label for="url">Indica tu página web o tu blog</label>
+            <input type="url" id="url" name="user_url">
+                 <br>
+                 <br>
+            <label for="provincias">De que provincia eres</label>
+            <select name="provincias" id="provincias">
+                <option value="badajoz">Badajoz</option>
+                <option value="caceres">Caceres</option>   
+            </select>
+                <br>
+                <br>
+         
+            <label for="sub" id="lb1"> </label>
+            <input type="submit" value="Entregar" id="sub" name="user_sub">
+           
+            <label for="sub"></label>
+            <input type="submit" value="Reiniciar" id="sub" name="user_sub">
+            
+            
+        
+      </form>
+
+
+    
+</body>
+</html>
